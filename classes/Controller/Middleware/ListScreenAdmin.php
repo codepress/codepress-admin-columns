@@ -60,6 +60,8 @@ class ListScreenAdmin implements Middleware {
 				Storage::KEY => $list_key,
 			] );
 
+			$list_id = null;
+
 			if ( $list_screens->count() > 0 ) {
 				$list_id = $list_screens->get_first()->get_id()->get_id();
 			}
